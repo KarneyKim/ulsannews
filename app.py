@@ -5,7 +5,7 @@ from datetime import datetime
 # 1. API 설정 및 AI 모델 초기화
 API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # 페이지 설정
 st.set_page_config(page_title="AI 학교 신문 작성기", layout="wide")
